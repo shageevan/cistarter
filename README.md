@@ -1,4 +1,4 @@
-ci-app-starter-kit
+CodeIgniter App Starter Kit
 ==================
 
-CodeIgniter App Starter Kit
+This repository will help you kickstart your codeigniter projects.
