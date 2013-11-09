@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="javascripts/scale.fix.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -15,17 +16,18 @@
   <body>
     <div class="wrapper">
       <header>
-        <h1>CodeIgniter Application Starter Kit</h1>
-        <p>Kickstart your code igniter application development with much less configuration effort</p>
-
-        <p class="view"><a href="https://github.com/shageevan/cistarter">View the Project on GitHub <small>shageevan/cistarter</small></a></p>
-
+        <h1 class="header">CodeIgniter Application Starter Kit</h1>
+        <p class="header">Kickstart your code igniter application development with much less configuration effort</p>
 
         <ul>
-          <li><a href="https://github.com/shageevan/cistarter/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/shageevan/cistarter/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/shageevan/cistarter">View On <strong>GitHub</strong></a></li>
+          <li class="download"><a class="buttons" href="https://github.com/shageevan/cistarter/zipball/master">Download ZIP</a></li>
+          <li class="download"><a class="buttons" href="https://github.com/shageevan/cistarter/tarball/master">Download TAR</a></li>
+          <li><a class="buttons github" href="https://github.com/shageevan/cistarter">View On GitHub</a></li>
         </ul>
+
+        <p class="header">This project is maintained by <a class="header name" href="https://github.com/shageevan">shageevan</a></p>
+
+
       </header>
       <section>
         <h1>
@@ -39,21 +41,41 @@
 <ul>
 <li>CodeIgniter REST Client - <a href="https://github.com/philsturgeon/codeigniter-restclient">https://github.com/philsturgeon/codeigniter-restclient</a>
 </li>
-<li>CodeIgniter CURL Library - <a href="https://github.com/philsturgeon/codeigniter-restclient">https://github.com/philsturgeon/codeigniter-restclient</a>
+<li>CodeIgniter CURL Library - <a href="https://github.com/philsturgeon/codeigniter-curl">https://github.com/philsturgeon/codeigniter-curl</a>
 </li>
 <li>CodeIgniter IonAuth Authentication Library - <a href="https://github.com/benedmunds/CodeIgniter-Ion-Auth">https://github.com/benedmunds/CodeIgniter-Ion-Auth</a>
 </li>
 </ul><h2>
+<a name="user-interface-components" class="anchor" href="#user-interface-components"><span class="octicon octicon-link"></span></a>User Interface Components</h2>
+
+<ul>
+<li>Boostrap - <a href="http://getbootstrap.com">http://getbootstrap.com</a>
+</li>
+<li>Font Awesome - <a href="http://fortawesome.github.io/Font-Awesome/">http://fortawesome.github.io/Font-Awesome/</a>
+</li>
+</ul><h2>
+<a name="wrapper-views" class="anchor" href="#wrapper-views"><span class="octicon octicon-link"></span></a>Wrapper Views</h2>
+
+<ul>
+<li>header.php</li>
+<li>footer.php</li>
+</ul><p>When loading views from your controller, load the wrapper views alongside like:</p>
+
+<pre><code>$this-&gt;load-&gt;view('header');
+...Your views...
+$this-&gt;load-&gt;view('footer');
+</code></pre>
+
+<h2>
 <a name="important" class="anchor" href="#important"><span class="octicon octicon-link"></span></a>Important</h2>
 
 <p>Always change your encryption key found at /app/application/config/config.php before you start developing your application. Visit <a href="http://randomkeygen.com">http://randomkeygen.com</a> to obtain a random CodeIgniter encryption key.</p>
       </section>
       <footer>
-        <p>This project is maintained by <a href="https://github.com/shageevan">shageevan</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+        <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
       </footer>
     </div>
-    <script src="javascripts/scale.fix.js"></script>
-    
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+		
   </body>
 </html>
