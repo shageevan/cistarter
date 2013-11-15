@@ -260,6 +260,23 @@ class MY_Loader extends CI_Loader
             {
                 $this->model($autoload['model']);
             }
+
         }
 	}
+
+    function appview($template_files=array(), $vars=array(), $return=FALSE)
+    {
+        $to_browser = $this->view('common/header', $vars, $return);
+        foreach($template_files as $template_file)
+        {
+            $to_browser .= $this->view($template_file, $vars, $return);
+        }
+        $to_browser .= $this->view('common/footer', $vars, $return);
+
+        if($return)
+        {
+            return $to_browser;
+        }
+
+    }
 }

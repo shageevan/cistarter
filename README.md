@@ -14,17 +14,13 @@ User Interface Components
 * Boostrap - [http://getbootstrap.com](http://getbootstrap.com)
 * Font Awesome - [http://fortawesome.github.io/Font-Awesome/](http://fortawesome.github.io/Font-Awesome/)
 
-Wrapper Views
+App Views
 -------------
-* header.php
-* footer.php
-
-When loading views from your controller, load the wrapper views alongside like:
+Load your views using
 ```
-$this->load->view('header');
-...Your views...
-$this->load->view('footer');
+$this->load->appviews(array('viewfile1','viewfile2','viewfile3'));
 ```
+This will load header and footer of the application automatically. If you want to edit, you can find them in /application/views/common/ folder.
 
 Important
 ---------
